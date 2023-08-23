@@ -1,0 +1,13 @@
+{
+    "vars": {},
+    "config": {
+        "tplBaseVersion": 5,
+        "type": "template",
+        "title": "General v5 Image",
+        "duration": 35,
+        "defaultPreviewOrientation": "landscape",
+        "responsive": true,
+        "scaledPreview": true,
+        "screenshot": "thumbnail"
+    }
+}
