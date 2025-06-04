@@ -1,7 +1,7 @@
 import fs from 'fs';
 import Ajv from 'ajv';
 
-const jsonFilePath = './waapiti.json';
+const jsonFilePath = './Waapiti.json';
 const jsonData = fs.readFileSync(jsonFilePath, 'utf8');
 
 const ajv = new Ajv();

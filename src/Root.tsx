@@ -1,15 +1,15 @@
-import React, { useEffect } from 'react';
-import { Template, Description } from '@waapiti/templates';
-import App from './App.tsx';
-import DESCRIPTION from '../waapiti.json';
+import React, { useEffect } from "react";
+import { Template, Description } from "@waapiti/templates";
+import App from "./App.tsx";
+import DESCRIPTION from "../Waapiti.json";
 
 const Root = () => {
   const [description, setDescription] = React.useState<Description>();
 
   useEffect(() => {
     const getData = async () => {
-      if (process.env.NODE_ENV === 'development') {
-        const data = await fetch('./waapiti.json');
+      if (process.env.NODE_ENV === "development") {
+        const data = await fetch("./Waapiti.json");
         const json = await data.json();
         setDescription(json);
       } else {

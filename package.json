@@ -11,15 +11,15 @@
     "validate": "node validate.mjs"
   },
   "dependencies": {
-    "@waapiti/templates": "~0.0.17",
+    "@waapiti/templates": "^5.6.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup-plugin-cjs-es": "^2.0.0"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.196",
-    "@types/react": "^18.2.15",
     "@types/node": "^20.4.5",
+    "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",

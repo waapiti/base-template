@@ -7,7 +7,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const WaapitiJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'waapiti.json'), 'utf8'));
+const WaapitiJson = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'Waapiti.json'), 'utf8'));
 
 const noAttr = () => {
   return {
@@ -40,7 +40,7 @@ const generateDescription = () => {
     name: 'generate-description-json',
     generateBundle(options, bundle) {
       if (process.env.NODE_ENV !== 'development') {
-        const srcPath = path.resolve(__dirname, 'waapiti.json');
+        const srcPath = path.resolve(__dirname, 'Waapiti.json');
         const destPath = path.resolve(__dirname, 'build/DESCRIPTION.json');
 
         try {
@@ -74,7 +74,7 @@ export default defineConfig({
   },
   plugins: [
     react(),
-    FullReload(['./waapiti.json']),
+    FullReload(['./Waapiti.json']),
     noAttr(),
     moveScript(),
     generateDescription(),
